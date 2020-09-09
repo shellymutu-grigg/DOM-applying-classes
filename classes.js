@@ -5,9 +5,12 @@ document.addEventListener('DOMContentLoaded', start)
 
 function start () {
   // The first example is done for you. Uncomment the line below and reload the browser.
-  // one()
-    
+   one()
+   
   // Your turn! Create a new function called `two`, then call it from here.
+    two() 
+    three()
+    makeVisible()
 }
 
 function one () {
@@ -19,7 +22,26 @@ function one () {
 }
 
 // CREATE FUNCTION two HERE
+function two () {
+  // First, we have to find the element:
+  var one = document.getElementById('two')
 
+  // Next, we apply a new CSS class to it:
+  one.classList.add('green')
+}
 // CREATE FUNCTION three HERE
+function three () {
+  // First, we have to find the element:
+  var one = document.getElementById('three')
 
+  // Next, we apply a new CSS class to it:
+  one.classList.add('violet')
+}
 // CREATE FUNCTION makeVisible HERE
+function makeVisible () {
+  // First, we have to find the element:
+  var one = document.getElementsByClassName("invisible")[0]
+
+  // Next, we apply a new CSS class to it:
+  one.classList.add('visible')
+}
